@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mapa conceptual con recuadros</title>
+	<style>
+		body {
+			background: linear-gradient(150deg, #6C3483, #58D68D);
+			font-family: Comic Sans MS, sans-serif;
+			color: #FFFFFF;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.box {
+			width: calc(33.33% - 20px);
+			height: 150px;
+			background-color:#1d1122;
+			padding: 20px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.logo {
+			width: 150px;
+			height: 150px;
+			background-color: #FFFFFF;
+			border-radius: 70%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		.logo img {
+			max-width: 60%;
+			max-height: 60%;
+		}
+		a {
+			color: #FFFFFF;
+			text-decoration: none;
+			font-size: 18px;
+			margin-bottom: 10px;
+			transition: all 0.3s ease-in-out;
+		}
+		a:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="logo">
+				<img src="img/logo.png" alt="Logo de la empresa">
+			</div>
+			<a href="http://127.0.0.1:5500/Inicio.html">Inicio</a>
+		</div>
+		<div class="box">
+			<a href="#">Paquetes</a>
+		</div>
+		<div class="box">
+			<a href="http://127.0.0.1:5500/reserva.html">Reserva</a>
+		</div>
+		<div class="box">
+			<a href="http://127.0.0.1:5500/preguntas-respuestas.html">Preguntas</a>
+		</div>
+		<div class="box">
+			<a href="http://127.0.0.1:5500/referencias.html">Referencias</a>
+		</div>
+		<div class="box">
+			<a href="http://127.0.0.1:5500/clausulas.html">Claúsulas</a>
+		</div>
+		<div class="box">
+			<a href="#">Contacto</a>
+		</div>
+	</div>
+</body>
+</html>

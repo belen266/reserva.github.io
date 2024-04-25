@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Reservación</title>
+    <style>
+        body {
+            background: linear-gradient(150deg, #6C3483, #58D68D);
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .formulario {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .formulario h2 {
+            text-align: center;
+        }
+
+        .formulario label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .formulario select,
+        .formulario input[type="date"],
+        .formulario input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .formulario input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #6C3483;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .formulario input[type="submit"]:hover {
+            background-color: #58D68D;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <h2>Formulario de Reservación</h2>
+        <form method="POST" action="guardar_reservacion.php">
+            <label for="direccion">Dirección del evento:</label>
+            <input name="direccion" required></input>
+
+            <label for="fecha">Fecha del evento:</label>
+            <input type="date" name="fecha" required>
+
+            <label for="hora">Hora del evento:</label>
+            <input type="time" name="hora" required>
+
+            <label for="paquete">Paquete:</label>
+            <select name="paquete" required>
+                <option value="1">Paquete Chavibásico</option>
+                <option value="2">Paquete Chaplus</option>
+                <option value="3">Paquete Chikidisco</option>
+                <option value="4">Paquete Chavipremium</option>
+                <option value="5">Paquete Miniferia</option>
+                <option value="6">Paquete Miniferia 2</option>
+                <option value="7">Paquete Miniferia Diamante</option>
+                <option value="8">Paquete Chavinflable</option>
+                <option value="9">Paquete Chavidelicia 1</option>
+                <option value="10">Paquete Chavidelicia 2</option>
+                <option value="12">Paquete Chavigold</option>
+            </select>
+
+            <label for="nombre">Usuario</label>
+            <input type="text" name="nombre" required>
+
+            <input type="submit" value="Reservar">
+        </form>
+    </div>
+</body>
+</html>

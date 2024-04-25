@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- HTML: inicio del documento -->
+<!-- lang: Idioma del documento -->
+<html lang="es">
+<!-- Datos del documento -->
+<head>
+    <!-- Lo que se muestra en la pestaña cuando se abre la página web -->
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="inicio_sesion.css">
+</head>
+<!-- Todo el contenido de nuestra web -->
+<body>
+    <div class="formulario">
+        <h1>Iniciar sesión</h1>
+        <figure>
+            <img src="img/logo.png" height="100px" width="40%" alt="logo">
+        </figure>
+        <form method="POST" action="guardar_usuario.php">
+            <div class="username">
+                <input type="text" name="usuario" required>
+                <label for="">Nombre de usuario</label>
+            </div>
+            <div class="contrasena">
+                <input type="password" name="contrasena" required>
+                <label for="">Contraseña</label>
+            </div>
+            <div class="recordar">
+                ¿Olvidó su contraseña?
+            </div>
+            <input type="submit" value="Ingresar">
+
+            <div class="registrarse">
+                Quiero <a href="registro.html">registrarme</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
